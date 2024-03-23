@@ -1,0 +1,39 @@
+Objectives: CRUD: Perform CRUD Operations on a database from Python
+Create:
+---Database
+---Table(s)
+---Record(s)
+
+Read from
+---a Database
+---Table(s)
+
+Update
+--- records in Table(s)
+
+Delete
+--- records in Table(s) 
+
+Decomposition
+Objectives: Modular programming(readability, maintainability, and reusability).
+Break down(develop) the application into small manageable parts.
+Run and test the different modules(parts) independently 
+
+Notes: SQLite DB: Important Attributes and Functions of Connection 
+--- Close: con.close() Closes the connection instantly. 
+--- Commit con.commit(): Commits any pending transaction to the database. 
+--- Rollback: con.rollback(): Rolls back to the start of any pending transaction. In other words: this cancels any non-committed transaction to the database. 
+--- Cursor = con.cursor(): The cursor object is used to execute SQL commands and queries. Returns a Cursor object. This is used to do transactions on the database. 
+--- Fetchone() method Fetches the next row of a query result set, returning a single sequence, or None when no more data is available. 
+--- Fetchall() method, which fetches all rows from the last executed statement. 
+--- Executemany() method, to insert multiple rows into a table.  
+--- Execute() method, when the number of records to be inserted is small and can be written directly in the code
+
+
+The SQL statement may be parametrized (i. e. placeholders instead of SQL literals). 
+A parameter specifies the value a particular field must contain when carrying out a query. 	
+
+
+Links to further reading on SQLite 
+https://docs.python.org/3/library/sqlite3.html
+https://www.sqlitetutorial.net/sqlite-python/
